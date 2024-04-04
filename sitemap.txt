@@ -6,3 +6,6 @@ http://www.b506.cn/vip
 http://www.b506.cn/tj
 http://www.b506.cn/blog
 http://www.b506.cn/blog-single-1
+http://www.b506.cn/blog-single-2
+http://www.b506.cn/blog-single-3
+http://www.b506.cn/blog-single-4
