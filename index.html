@@ -9,7 +9,31 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
 <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
- 
+	<style>
+.row.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* 根据需要调整为center, flex-start, flex-end */
+}
+.col-md-4.d-flex {
+  flex: 0 0 30%; /* 调整为所需的宽度百分比 */
+  max-width: 30%; /* 与flex基础宽度一致 */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 中心对齐子项 */
+}
+.blog-entry {
+  width: 100%; /* 让博客条目填充容器 */
+  display: flex;
+  flex-direction: column;
+}
+.block-20 {
+  width: 100%; /* 图片背景填充整个容器宽度 */
+  height: 200px; /* 根据需要调整高度 */
+  background-size: cover; /* 背景图片覆盖整个容器 */
+  border-radius: 10px; /* 可选，为图片添加圆角 */
+}
+</style>
     <link rel="stylesheet" href="css/animate.css">
     
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -492,7 +516,105 @@
             <h2>最近事件</h2>
           </div>
         </div>
+
+<div class="row d-flex">
+  <!-- 博客入口1 -->
+  <div class="col-md-4 d-flex ftco-animate">
+
+  <div class="blog-entry align-self-stretch">
+              <a href="blog-single-4.html" class="block-20 rounded" style="background-image: url('https://s21.ax1x.com/2024/04/04/pFbGqgK.jpg');">
+              </a>
+              <div class="text mt-3 text-center">
+              	<div class="meta mb-2">
+                  <div><a href="blog-single-4">2024-4-4</a></div>
+                  <div><a href="blog-single-4">Know</a></div>
+                  <div><a href="blog-single-4" class="meta-chat"><span class="icon-chat"></span> #4</a></div>
+                </div>
+                <h3 class="heading"><a href="blog-single-4">lhy 的宿舍内卷生活</a></h3>
+              </div>
+            </div>
+  </div>
+
+
+  </div>
+<!--
+
+  <div class="col-md-4 d-flex ftco-animate">
+ 
+
+
+            <div class="blog-entry align-self-stretch">
+              <a href="blog-single-3.html" class="block-20 rounded" style="background-image: url('https://s21.ax1x.com/2024/04/04/pFbGajS.jpg');">
+              </a>
+              <div class="text mt-3 text-center">
+              	<div class="meta mb-2">
+                  <div><a href="blog-single-3">2024-4-4</a></div>
+                  <div><a href="blog-single-3">Know</a></div>
+                  <div><a href="blog-single-3" class="meta-chat"><span class="icon-chat"></span> #3</a></div>
+                </div>
+                <h3 class="heading"><a href="blog-single-3">B506 的泡面 - 美食</a></h3>
+              </div>
+            </div>
+
+
+  <div class="col-md-4 d-flex ftco-animate">
+
+            <div class="blog-entry align-self-stretch">
+              <a href="blog-single-1.html" class="block-20 rounded" style="background-image: url('https://s21.ax1x.com/2024/03/30/pFTlDN8.jpg');">
+              </a>
+              <div class="text mt-3 text-center">
+              	<div class="meta mb-2">
+                  <div><a href="blog-single-1">2024-4-4</a></div>
+                  <div><a href="blog-single-1">Know</a></div>
+                  <div><a href="blog-single-1" class="meta-chat"><span class="icon-chat"></span> #1</a></div>
+                </div>
+                <h3 class="heading"><a href="blog-single-2">B506 网站已正式开放！来自凤岭北路中学的第一个宿舍网站</a></h3>
+              </div>
+            </div>
+
+  </div>-->
+</div>
+
+
+
+
+
+
+
+<!--
+      <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a href="blog-single-4.html" class="block-20 rounded" style="background-image: url('https://s21.ax1x.com/2024/04/04/pFbGqgK.jpg');">
+              </a>
+              <div class="text mt-3 text-center">
+              	<div class="meta mb-2">
+                  <div><a href="blog-single-4">2024-4-4</a></div>
+                  <div><a href="blog-single-4">Know</a></div>
+                  <div><a href="blog-single-4" class="meta-chat"><span class="icon-chat"></span> #4</a></div>
+                </div>
+                <h3 class="heading"><a href="blog-single-4">lhy 的宿舍内卷生活</a></h3>
+              </div>
+            </div>
+          </div>
+          
+         <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry align-self-stretch">
+              <a href="blog-single-3.html" class="block-20 rounded" style="background-image: url('https://s21.ax1x.com/2024/04/04/pFbGajS.jpg');">
+              </a>
+              <div class="text mt-3 text-center">
+              	<div class="meta mb-2">
+                  <div><a href="blog-single-3">2024-4-4</a></div>
+                  <div><a href="blog-single-3">Know</a></div>
+                  <div><a href="blog-single-3" class="meta-chat"><span class="icon-chat"></span> #3</a></div>
+                </div>
+                <h3 class="heading"><a href="blog-single-3">B506 的泡面 - 美食</a></h3>
+              </div>
+            </div>
+          </div>
         
+
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
@@ -502,12 +624,13 @@
               	<div class="meta mb-2">
                   <div><a href="blog-single-1">2024-4-4</a></div>
                   <div><a href="blog-single-1">Know</a></div>
-                  <div><a href="blog-single-1" class="meta-chat"><span class="icon-chat"></span> 0</a></div>
+                  <div><a href="blog-single-1" class="meta-chat"><span class="icon-chat"></span> #1</a></div>
                 </div>
-                <h3 class="heading"><a href="blog-single-1">B506 网站已正式开放！来自凤岭北路中学的第一个宿舍网站</a></h3>
+                <h3 class="heading"><a href="blog-single-2">B506 网站已正式开放！来自凤岭北路中学的第一个宿舍网站</a></h3>
               </div>
             </div>
           </div>
+          
           <!--
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
@@ -535,7 +658,7 @@
                 </div>
                 <h3 class="heading"><a href="#">凌灏阳因违约需支付15000次TJ，每日利息300%，利滚利</a></h3>
               </div>
-            </div>-->
+            </div>-->-->
           </div>
         </div>
       </div>
@@ -550,12 +673,12 @@
 						<div class="row">
 							<div class="col-md-4 mb-md-0 mb-4">
 								<h2 class="footer-heading">关于我们</h2>
-								<p>由来自飞机班的同学组成的一个小型宿舍</p>
-								<ul class="ftco-footer-social p-0">
+								<p>由来自飞机班的同学组成的一个小型宿舍。是南宁市青秀区凤岭北路中学的一个宿舍。</p>
+								<!--<ul class="ftco-footer-social p-0">
 		              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="ion-logo-twitter"></span></a></li>
 		              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="ion-logo-facebook"></span></a></li>
 		              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="ion-logo-instagram"></span></a></li>
-		            </ul>
+		            </ul>-->
 							</div>
 							<div class="col-md-8">
 								<div class="row justify-content-center">
@@ -564,16 +687,14 @@
 											<div class="col-md-4 mb-md-0 mb-4">
 												<h2 class="footer-heading">服务</h2>
 												<ul class="list-unstyled">
-						              <li><a href="#" class="py-1 d-block">联系黄金导师</a></li>
-						              <li><a href="#" class="py-1 d-block">联系钻石技师</a></li>
-						              <li><a href="#" class="py-1 d-block">加入 B506</a></li>
-						              <li><a href="#" class="py-1 d-block">购买 TJ VIP</a></li>
+						              <li><a href="app.html" class="py-1 d-block">下载 B506 官方APP</a></li>
+						              <li><a href="vip.html" class="py-1 d-block">查看 TJ VIP 定价</a></li>
 						            </ul>
 											</div>
 											<div class="col-md-4 mb-md-0 mb-4">
 												<h2 class="footer-heading">指南针</h2>
 												<ul class="list-unstyled">
-						              <li><a href="#" class="py-1 d-block">前往腾飞网</a></li>
+						              <li><a href="http://tf.powerappsportals.com" class="py-1 d-block">前往腾飞网</a></li>
 						              <li><a href="#" class="py-1 d-block"> </a></li>
 						              <li><a href="#" class="py-1 d-block"> </a></li>
 						              <li><a href="#" class="py-1 d-block"> </a></li>
@@ -596,13 +717,13 @@
 						<div class="row mt-md-5">
 							<div class="col-md-12">
 								<p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ion-ios-heart" aria-hidden="true"></i> by <a href="https://c7g7.eu.org" target="_blank">c7g7.eu.org</a>
+					  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | 此网站由 Know 及其团队共同创造 | 不代表凤岭北路中学观点 <i class="ion-ios-heart" aria-hidden="true"></i> by <a href="https://c7g7.eu.org" target="_blank">c7g7.eu.org</a>
 					  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-3 py-md-5 py-4 aside-stretch-right pl-lg-5">
-						<h2 class="footer-heading">加入我们</h2>
+						<h2 class="footer-heading">加入我们（未开放）</h2>
 						<form action="#" class="contact-form">
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="你的名字">
