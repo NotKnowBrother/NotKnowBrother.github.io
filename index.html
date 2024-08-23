@@ -106,6 +106,9 @@
             font-weight: bold; /* 加粗 */
             color: white;
         }
+        .hidden {
+    display: none;
+}
     </style>
     <link rel="stylesheet" href="css/animate.css">
     
@@ -120,6 +123,9 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+  
+  
+  
 		<script src="https://kit.fontawesome.com/d0d86d49a6.js" crossorigin="anonymous"></script>
 
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -199,6 +205,31 @@
 	      
 	    </div>
 	  </div>
+
+
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+          	<span class="subheading">公告</span>
+            <h2>b506.cn 即将迁移至 c7g7.eu.org。</h2>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+  var referrer = document.referrer;
+
+  // 检查来源URL是否包含特定域名
+  if (referrer.includes("c7g7.eu.org")) {
+    var section = document.querySelector(".ftco-section");
+    section.classList.add("hidden"); // 如果是从c7g7.eu.org访问的，隐藏板块
+  }
+  </script>
+		
 
     <section class="ftco-section ftco-no-pt ftco-no-pb">
     	<div class="container">
