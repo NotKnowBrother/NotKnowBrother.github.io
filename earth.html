@@ -23,15 +23,20 @@ div {
 </style>
 </head>
 <body>
-<div style="background: url('https://img.nsmc.org.cn/CLOUDIMAGE/FY4B/AGRI/THUMBNAIL/FY4B_AGRI_DISK_GCLR.jpg?time=' + new Date().getTime());">
-</div>
+<div id="earth"></div>
 
 <script>
-    // JavaScript 用于更新背景图片，每次页面加载时添加一个新的时间戳
-    document.addEventListener("DOMContentLoaded", function() {
-        var div = document.querySelector("div");
-        div.style.backgroundImage = "url('http://img.nsmc.org.cn/CLOUDIMAGE/FY4A/MTCC/FY4A_DISK.JPG?time=" + new Date().getTime() + "')";
-    });
+    function updateBackgroundImage() {
+        var div = document.getElementById('earth');
+        var url = "http://img.nsmc.org.cn/CLOUDIMAGE/FY4A/MTCC/FY4A_DISK.JPG?time=" + new Date().getTime();
+        div.style.backgroundImage = "url('" + url + "')";
+    }
+
+    // 页面加载时更新背景图片
+    updateBackgroundImage();
+
+    // 每5分钟更新一次背景图片
+    setInterval(updateBackgroundImage, 300000); // 300000 毫秒 = 5分钟
 </script>
 
 </body>
