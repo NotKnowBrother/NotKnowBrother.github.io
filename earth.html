@@ -1,8 +1,5 @@
 <html>
 <head>
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
 <meta http-equiv="refresh" content="300">
 <style>
 body {
@@ -16,7 +13,6 @@ body {
 }
 
 div {
-    background: url(http://img.nsmc.org.cn/CLOUDIMAGE/FY4A/MTCC/FY4A_DISK.JPG);
     background-repeat: no-repeat;
     background-size: contain; /* 保证图片按比例缩放并适合容器 */
     background-position: center; /* 确保图片居中 */
@@ -27,7 +23,16 @@ div {
 </style>
 </head>
 <body>
-<div>
+<div style="background: url('http://img.nsmc.org.cn/CLOUDIMAGE/FY4A/MTCC/FY4A_DISK.JPG?time=' + new Date().getTime());">
 </div>
+
+<script>
+    // JavaScript 用于更新背景图片，每次页面加载时添加一个新的时间戳
+    document.addEventListener("DOMContentLoaded", function() {
+        var div = document.querySelector("div");
+        div.style.backgroundImage = "url('http://img.nsmc.org.cn/CLOUDIMAGE/FY4A/MTCC/FY4A_DISK.JPG?time=" + new Date().getTime() + "')";
+    });
+</script>
+
 </body>
 </html>
