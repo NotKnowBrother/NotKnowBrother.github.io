@@ -2,17 +2,23 @@
 <head>
 <meta http-equiv="refresh" content="300">
 <style>
-body{background-color: #000000;}
-div{
-background: url(http://img.nsmc.org.cn/CLOUDIMAGE/FY4A/MTCC/FY4A_DISK.JPG);
-background-repeat:no-repeat;
-width: 700px;
-height: 700px;
-border-radius: 400px;
-background-size: 700px;
-position: absolute;
-right: 220px;
-bottom: 220px;
+body {
+    background-color: #000000;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    height: 100vh; /* 使页面充满整个视口高度 */
+    margin: 0;
+    overflow: hidden; /* 隐藏可能的滚动条 */
+}
+
+div {
+    background: url(http://img.nsmc.org.cn/CLOUDIMAGE/FY4A/MTCC/FY4A_DISK.JPG);
+    background-repeat: no-repeat;
+    background-size: contain; /* 让图片按比例缩放 */
+    width: 500px; /* 缩小图片宽度 */
+    height: 500px; /* 缩小图片高度 */
+    border-radius: 50%; /* 使图片圆形 */
 }
 </style>
 </head>
